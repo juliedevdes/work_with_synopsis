@@ -1,0 +1,85 @@
+    .features__icon--wrap {
+        background-color: #F5F4FA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+    
+    .features {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .features__item {
+        margin-bottom: 30px;
+    }
+    
+    .features__header {
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    
+    .features__text {
+        display: flex;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--second-color);
+    }
+    
+    @media screen and (min-width: 768px) {
+        .features__header {
+            justify-content: flex-start;
+        }
+        .features__icon--wrap {
+            width: 354px;
+            justify-content: center;
+        }
+        .features__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .features__item {
+            &:nth-child(2n + 1) {
+                margin-right: 30px;
+            }
+        }
+        .features__text {
+            max-width: 354px;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .features__icon--wrap {
+            background-color: #F5F4FA;
+            width: 270px;
+            margin-bottom: 30px;
+        }
+        .features {
+            padding-top: 95px;
+            padding-bottom: 95px;
+        }
+        .features__list {
+            display: flex;
+        }
+        .features__item {
+            width: 270px;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+        .features__header {
+            justify-content: unset;
+            margin-top: unset;
+        }
+    }

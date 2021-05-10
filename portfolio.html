@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container navigation">
+            <nav class="header--wrap">
+                <a class="header__logo logo link" lang="en" href="./index.html">Web<span class="header__logo--dark">Studio</span></a>
+                <ul class="header__list list">
+                    <li class="header__item--left"><a class="link  header__link" href="./index.html">Студия</a></li>
+                    <li class="header__item--left"><a class="link current header__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header__item--left"><a class="link header__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <button type="button" data-menu-button class="header__btn--mobile">
+                <svg width="40" height="40"><use href="./images/sprite.svg#icon-menu"></use></svg>
+            </button>
+
+            <ul class="header__list--right list">
+                <li class="header__item--right ">
+                    <a class="link header__contacts header__mail" href="mailto:info@devstudio.com"><svg class="header__contacts-icon" width="16" height="12"><use href="./images/sprite.svg#icon-envelope"></use></svg><span class="header__contacts--text-right">info@devstudio.com</span></a>
+                </li>
+                <li class="header__item--right ">
+                    <a class="link header__contacts header__tel" href="tel:+380961111111"><svg class="header__contacts-icon" width="10" height="16"><use href="./images/sprite.svg#icon-smartphone"></use></svg><span class="header__contacts--text-right">+38 096 111 11 11</span></a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="mobile-menu" data-menu>
+            <button data-menu-close class="mobile-menu__close" type="button"><svg class="mobile-menu__close-icon" width="40" height="40" ><use href="./images/sprite.svg#icon-close"></use></svg>
+            </button>
+            <ul class="mobile-menu__list list">
+                <li class="mobile-menu__item">
+                    <a href="./index.html" class="mobile-menu__link link">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="./portfolio.html" class="mobile-menu__link current  link">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="" class="mobile-menu__link link">Контакты</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-menu__contacts-list list">
+                <li class="mobile-menu__contacts-item--big">
+                    <a href="tel:+380961111111" class="mobile-menu__contacs-link--big link">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__contacts-item">
+                    <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link link">info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-menu__social-list list">
+                <li class="mobile-menu__socials-item">
+                    <a href="#" class="mobile-menu__socials-link link">Instagram</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a href="#" class="mobile-menu__socials-link link">Twitter</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a href="#" class="mobile-menu__socials-link link">Facebook</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a href="#" class="mobile-menu__socials-link link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <div class="container">
+                <h1 class="visually-hidden">Наши работы</h1>
+                <ul class="portfolio__btn-list list">
+                    <li class="portfolio__btn-list-item"><button class="portfolio__filter-button" type="button">Все</button></li>
+                    <li class="portfolio__btn-list-item"><button class="portfolio__filter-button" type="button">Веб-сайты</button></li>
+                    <li class="portfolio__btn-list-item"><button class="portfolio__filter-button" type="button">Приложения</button></li>
+                    <li class="portfolio__btn-list-item"><button class="portfolio__filter-button" type="button">Дизайн</button></li>
+                    <li class="portfolio__btn-list-item"><button class="portfolio__filter-button" type="button">Маркетинг</button></li>
+                </ul>
+                <ul class="portfolio__case-list list">
+                    <li class="potfoilio__item">
+                        <a href="" class="por-card link">
+                            <div class="por-card__overlay--wrap">
+                                <p class="por-card__overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                                <picture>
+                                    <source srcset="./images/portfolio/img.jpg, ./images/desktop@2x/por@2x-cryak.jpg 2x" media="(min-width:1200px)">
+                                    <source srcset="./images/tablet/por@1x-cryak.jpg 1x, ./images/tablet/por@2x-cryak.jpg 2x" media="(min-width:768px)">
+                                    <source srcset="./images/mobile/por@1x-cryak.jpg 1x, ./images/mobile/por@2x-cryak.jpg 2x" media="(min-width:320px)">
+                                    <img class="por-card__pic" src="./images/portfolio/img.jpg" alt="сайт с карточками про людей">
+
+                                </picture>
+                            </div>
+                            <div class="por-card__capture">
+                                <h2 class="por-card__header">Технокряк</h2>
+                                <p class="por-card__text">Веб-сайт</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="potfoilio__item">
+                        <a href="" class="por-card link">
+                            <div class="por-card__overlay--wrap">
+                                <p class="por-card__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet totam perspiciatis laboriosam fuga voluptates.</p>
+                                <picture>
+                                    <source srcset="./images/portfolio/img-1.jpg, ./images/desktop@2x/por@2x-basketball.jpg 2x" media="(min-width:1200px)">
+                                    <source srcset="./images/tablet/por@1x-basketball.jpg 1x, ./images/tablet/por@2x-basketball.jpg 2x" media="(min-width:768px)">
+                                    <source srcset="./images/mobile/por@1x-basketball.jpg 1x, ./images/mobile/por@2x-basketball.jpg 2x" media="(min-width:320px)">
+                                    <img class="por-card__pic" src="./images/portfolio/img-1.jpg" alt="двое играют в баскетбол">
+                                </picture>
+
+                            </div>
+                            <div class="por-card__capture por-card__capture--bigger">
+                                <h2 class="por-card__header">Постер New Orlean vs Golden Star</h2>
+                                <p class="por-card__text">Дизайн</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="potfoilio__item">
+                        <a href="" class="por-card link">
+                            <div class="por-card__overlay--wrap">
+                                <p class="por-card__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet totam perspiciatis laboriosam fuga voluptates.</p>
+                                <picture>
+                                    <source srcset="./images/portfolio/img-2.jpg, ./images/desktop@2x/por@2x-sea.jpg 2x" media="(min-width:1200px)">
+                                    <source srcset="./images/tablet/por@1x-sea.jpg 1x, ./images/tablet/por@2x-sea.jpg 2x" media="(min-width:768px)">
+                                    <source srcset="./images/mobile/por@1x-sea.jpg 1x, ./images/mobile/por@2x-sea.jpg 2x" media="(min-width:320px)">
+                                    <img class="por-card__pic" src="./images/portfolio/img-2.jpg" alt="логотип с рыбой на заднем плане">
+                                </picture>
+                            </div>
+                            <div class="por-card__capture">
+                                <h2 class="por-card__header">Ресторан Seafood</h2>
+                                <p class="por-card__text">Приложение</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="potfoilio__item">
+                        <a href="" class="por-card link">
+                            <div class="por-card__overlay--wrap">
+                                <p class="por-card__overlay">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur obcaecati sunt laboriosam pariatur dolorem quaerat facilis quasi totam voluptates explicabo, aliquid debitis quod quia nobis nihil reprehenderit nostrum
+                                    labore? Eligendi!</p>
+                                <picture>
+                                    <source srcset="./images/portfolio/img-3.jpg, ./images/desktop@2x/por@2x-headphones.jpg 2x" media="(min-width:1200px)">
+                                    <source srcset="./images/tablet/por@1x-headphones.jpg 1x, ./images/tablet/por@2x-headphones.jpg 2x" media="(min-width:768px)">
+                                    <source srcset="./images/mobile/por@1x-headphones.jpg 1x, ./images/mobile/por@2x-headphones.jpg 2x" media="(min-width:320px)">
+                                    <img class="por-card__pic" src="./images/portfolio/img-3.jpg" alt="наушники">
+
+                                </picture>
+
+                            </div>
+                            <div class="por-card__capture">
+                                <h2 class="por-card__header">Проект Prime</h2>
+                                <p class="por-card__text">Маркетинг</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="potfoilio__item">
+                        <a href="" class="por-card link">
+                            <div class="por-card__overlay--wrap">
+                                <p class="por-card__overlay">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusantium, commodi perferendis doloremque, perspiciatis vero adipisci quam maiores eum ipsam repellendus doloribus quibusdam! Sed recusandae distinctio
+                                    est voluptatem in a?</p>
+                                <picture>
+                                    <source srcset="./images/portfolio/img-4.jpg, ./images/desktop@2x/por@2x-boxes.jpg 2x" media="(min-width:1200px)">
+                                    <source srcset="./images/tablet/por@1x-boxes.jpg 1x, ./images/tablet/por@2x-boxes.jpg 2x" media="(min-width:768px)">
+                                    <source srcset="./images/mobile/por@1x-boxes.jpg 1x, ./images/mobile/por@2x-boxes.jpg 2x" media="(min-width:320px)">
+                                    <img class="por-card__pic" src="./images/portfolio/img-4.jpg" alt="две коробки картонные">
+                                </picture>
+                            </div>
+                            <div class="por-card__capture">
+                                <h2 class="por-card__header">Проект Boxes</h2>
+                                <p class="por-card__text">Приложение</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="potfoilio__item">
+                        <a href="" class="por-card link">
+                            <div class="por-card__overlay--wrap">
+                                <p class="por-card__overlay">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur obcaecati sunt laboriosam pariatur dolorem quaerat facilis quasi totam voluptates explicabo, aliquid debitis quod quia nobis nihil reprehenderit nostrum</p>
+                                <picture>
+                                    <source srcset="./images/portfolio/img-5.jpg, ./images/desktop@2x/por@2x-screen.jpg 2x" media="(min-width:1200px)">
+                                    <source srcset="./images/tablet/por@1x-screen.jpg 1x, ./images/tablet/por@2x-screen.jpg 2x" media="(min-width:768px)">
+                                    <source srcset="./images/mobile/por@1x-screen.jpg 1x, ./images/mobile/por@2x-screen.jpg 2x" media="(min-width:320px)">
+                                    <img class="por-card__pic" src="./images/portfolio/img-5.jpg" alt="монитор с сайтом в темной теме">
+
+                                </picture>
+                            </div>
+                            <div class="por-card__capture">
+                                <h2 class="por-card__header">Inspiration has no Borders</h2>
+                                <p class="por-card__text">Веб-сайт</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="potfoilio__item">
+                        <a href="" class="por-card link">
+                            <div class="por-card__overlay--wrap">
+                                <p class="por-card__overlay">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur obcaecati sunt laboriosam pariatur dolorem quaerat facilis quasi totam voluptates explicabo, aliquid debitis quod quia nobis nihil reprehenderit nostrum
+                                    labore? Eligendi!</p>
+                                <picture>
+                                    <source srcset="./images/portfolio/img-6.jpg, ./images/desktop@2x/por@2x-boxes.jpg 2x" media="(min-width:1200px)">
+                                    <source srcset="./images/tablet/por@1x-boxes.jpg 1x, ./images/tablet/por@2x-boxes.jpg 2x" media="(min-width:768px)">
+                                    <source srcset="./images/mobile/por@1x-boxes.jpg 1x, ./images/mobile/por@2x-boxes.jpg 2x" media="(min-width:320px)">
+                                    <img class="por-card__pic" src="./images/portfolio/img-6.jpg" alt="глянцевый журнал">
+                                </picture>
+                            </div>
+                            <div class="por-card__capture">
+                                <h2 class="por-card__header">Издание Limited Edition</h2>
+                                <p class="por-card__text">Дизайн</p>
+                            </div>
+                        </a>
+
+
+                    </li>
+                    <li class="potfoilio__item">
+                        <a href="" class="por-card link">
+                            <div class="por-card__overlay--wrap">
+                                <p class="por-card__overlay">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur obcaecati sunt laboriosam pariatur dolorem quaerat facilis quasi totam voluptates explicabo, aliquid debitis quod quia nobis nihil reprehenderit nostrum
+                                    labore? Eligendi!</p>
+                                <picture>
+                                    <source srcset="./images/portfolio/img-7.jpg, ./images/desktop@2x/por@2x-tag.jpg 2x" media="(min-width:1200px)">
+                                    <source srcset="./images/tablet/por@1x-tag.jpg 1x, ./images/tablet/por@2x-tag.jpg 2x" media="(min-width:768px)">
+                                    <source srcset="./images/mobile/por@1x-tag.jpg 1x, ./images/mobile/por@2x-tag.jpg 2x" media="(min-width:320px)">
+                                    <img class="por-card__pic" src="./images/portfolio/img-7.jpg" alt="бирка с надписью лейбл">
+
+                                </picture>
+                            </div>
+                            <div class="por-card__capture">
+                                <h2 class="por-card__header">Проект LAB</h2>
+                                <p class="por-card__text">Маркетинг</p>
+                            </div>
+                        </a>
+
+
+                    </li>
+                    <li class="potfoilio__item">
+                        <a href="" class="por-card link">
+                            <div class="por-card__overlay--wrap">
+                                <p class="por-card__overlay">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur obcaecati sunt laboriosam pariatur dolorem quaerat facilis quasi totam voluptates explicabo, aliquid debitis quod quia nobis nihil reprehenderit nostrum
+                                    labore? Eligendi!</p>
+
+                                <picture>
+                                    <source srcset="./images/portfolio/img-8.jpg, ./images/desktop@2x/por@2x-hands.jpg 2x" media="(min-width:1200px)">
+                                    <source srcset="./images/tablet/por@1x-hands.jpg 1x, ./images/tablet/por@2x-hands.jpg 2x" media="(min-width:768px)">
+                                    <source srcset="./images/mobile/por@1x-hands.jpg 1x, ./images/mobile/por@2x-hands.jpg 2x" media="(min-width:320px)">
+                                    <img class="por-card__pic" src="./images/portfolio/img-8.jpg" alt="ноутбук и руки">
+
+                                </picture>
+
+                            </div>
+                            <div class="por-card__capture">
+                                <h2 class="por-card__header">Growing Business</h2>
+                                <p class="por-card__text">Приложение</p>
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer--position container">
+
+            <div class="footer__address">
+                <a lang="en" class="footer__logo logo link" href="./index.html">Web<span class="footer__logo--light">Studio</span></a>
+                <address class="general-adress">
+            <ul class="list ">
+                <li class="footer__item"><a class="link footer__contacts--white" href="https://goo.gl/maps/BEkhHuZWLyBjJodx8" target="_blank" rel="noreferrer noopenerr" >г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li class="footer__item"><a class="link footer__contacts" href="mailto:info@example.com">info@example.com</a></li>
+                <li class="footer__item"><a class="link footer__contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            </ul>
+                </address>
+            </div>
+
+            <div class="footer__socials">
+                <p class="footer__calltoaction">Присоединяйтесь</p>
+                <ul class="socials list">
+                    <li class="socials__item">
+                        <a href="" class="socials__link"><svg class="socials__icon" width="20" height="20"><use href="./images/sprite.svg#icon-instagram"></use></svg></a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link"><svg class="socials__icon" width="20" height="20"><use href="./images/sprite.svg#icon-twitter"></use></svg></a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link"><svg class="socials__icon" width="20" height="20"><use href="./images/sprite.svg#icon-facebook"></use></svg></a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link"><svg class="socials__icon" width="20" height="20"><use href="./images/sprite.svg#icon-linkedin"></use></svg></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__form">
+                <p class="footer__form-call">Подпишитесь на рассылку
+                </p>
+                <form action="#" class="footer__subsc-form">
+                    <label for="subsc-mail" class="visually-hidden">Подписка на рассылку</label>
+                    <input id="subsc-mail" required type="email" name="mail-for-subscribe" placeholder="E-mail" class="footer__subsc-input">
+                    <button type="submit" class="footer__subsc-btn btn">
+                        Подписаться
+                        <svg class="footer__send-icon" width="24" height="24"><use href="./images/sprite.svg#icon-send"></use></svg>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+
+</body>
+
+</html>

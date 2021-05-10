@@ -1,0 +1,43 @@
+.wedo {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .wedo__card {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+    }
+    .wedo__capture {
+        position: absolute;
+        color: var(--white-font);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        background: rgba(47, 48, 58, 0.8);
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wedo__headline {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+    .wedo__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .wedo {
+        display: block;
+        padding-bottom: 95px;
+    }
+}
